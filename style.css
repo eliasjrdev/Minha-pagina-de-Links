@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: white;
+    --background: #121214;
+    --strock-color:rgba(255, 255, 255, 0.5);
+    --background-links: rgba(0, 0, 0, 0.1);
+    --buttonDarkModeBg-url: url(./imgs/stars.svg);
+}
+
+.lightColor{
+    --text-color:black;
+    --background: #E8E0D9;
+    --strock-color:rgba(0, 0, 0, 0.5);
+    --background-links: rgba(255, 255, 255, 0.1);
+    --buttonDarkModeBg-url: url(./imgs/sun.svg);
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+#container{
+    width: 360px;
+    height: 712px;
+    margin: auto;
+    padding-top: 56px;
+}
+
+#perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#perfil img{
+    width: 112px;
+    line-height: 24px;
+    border: 2.5px solid var(--strock-color);
+    border-radius: 50%;
+}
+
+#perfil p{
+    margin-top: 8px;
+    line-height: 24px;
+}
+
+#container ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+/* Button Dark Mode */
+
+#buttonDarkMode{
+    cursor: pointer;
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+
+#buttonDarkMode button{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: white var(--buttonDarkModeBg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+#buttonDarkMode span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background-color: var(--background);
+    border: 1px solid var(--strock-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+    transition: 1s;
+}
+
+.lightColor #buttonDarkMode button{
+    right: 0;
+    left: initial;
+}
+
+
+
+
+
+/*LINKS BOTOES*/
+
+ul{
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background: var(--background-links);
+    border: 1px solid var(--strock-color);
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    font-weight: 500;
+
+    transition: all 0.3s;
+}
+
+ul li a:hover{
+    background:rgba(255, 255, 255, 0.5);
+    border: 1.5px solid var(--text-color);
+}
+
+.copy{
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
