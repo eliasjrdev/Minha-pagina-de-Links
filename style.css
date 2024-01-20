@@ -86,8 +86,10 @@ body{
     animation: slideBack 0.4s;
 }
 
-#buttonDarkMode button:hover{
-    outline: 8px solid rgba(255, 255, 255, 0.253);
+@media only screen and (min-width: 768px) {
+    #buttonDarkMode button:hover {
+        outline: 8px solid rgba(255, 255, 255, 0.253);
+    }
 }
 
 
