@@ -33,7 +33,6 @@ body{
     height: 712px;
     margin: auto;
     padding-top: 56px;
-    border: 2px solid red;
     position: relative;
 }
 
@@ -48,20 +47,19 @@ body{
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
-    border: 2px solid rgb(13, 255, 0);
     background: url('imgs/387780663_632501189089528_8891540170547870282_n.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 #perfil img{
     width: 100%;
     height: 100%;
-    border: 2px solid red;
+
 }
 
 #perfil p{
     margin-top: 8px;
     line-height: 24px;
-    border: 2px solid red;
 }
 
 #container ul{
@@ -129,7 +127,24 @@ ul{
     list-style: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #000000;
+}
+
+ul::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #000000, transparent);
 }
 
 
