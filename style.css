@@ -29,11 +29,12 @@ body{
 }
 
 #container{
-    width: 360px;
+    width: 100vw;
     height: 712px;
     margin: auto;
     padding-top: 56px;
     position: relative;
+    border: 2px solid red;
 }
 
 #perfil{
@@ -47,7 +48,7 @@ body{
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
-    background: url('imgs/387780663_632501189089528_8891540170547870282_n.jpg') no-repeat center center;
+    background: url('imgs/IMG_8502.jpeg') no-repeat center center;
     background-size: cover;
 }
 
@@ -193,7 +194,7 @@ ul li a:hover{
         left: 0;
     }
 }
-/*
+
 @media only screen and (min-width: 768px) and (max-width: 2800px) {
     
 
@@ -228,4 +229,4 @@ ul li a:hover{
         border-radius: 50%;
     }
     
-}*/
+}
