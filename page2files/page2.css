@@ -78,3 +78,47 @@ header{
   .next {
     right: 0;
   }
+
+#carrosselContainer2{
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#carrosselSlides2{
+    border: 2px solid rgb(30, 0, 255);
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrosselImg2 img{
+    width: 100%;
+    height: auto;
+}
+
+.carrosselImg2{
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.prev2, .next2{
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev2 {
+    left: 0;
+  }
+
+  .next2 {
+    right: 0;
+  }
