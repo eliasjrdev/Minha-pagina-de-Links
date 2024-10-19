@@ -60,6 +60,7 @@ body{
     width: 100%;
     height: 150px; /* Aumenta ainda mais a área de transição */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgb(0, 0, 0));
+    
 }
 
 #perfil p{
@@ -71,13 +72,18 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 1.7em;
+    
 }
 
 
 #container ul{
+    height: 100%;
+    position: absolute;
+    top: 40%;
     display: flex;
     flex-direction: column;
-    padding: 0 24px;
+    padding: 0 10px;
+    border: 2px solid rgb(0, 255, 166);
 }
 
 /* Button Dark Mode */
@@ -105,11 +111,7 @@ body{
     animation: slideBack 0.4s;
 }
 
-@media only screen and (min-width: 768px) {
-    #buttonDarkMode button:hover {
-        outline: 8px solid rgba(255, 255, 255, 0.253);
-    }
-}
+
 
 
 #buttonDarkMode span {
@@ -180,6 +182,22 @@ ul li a:hover{
     background:rgba(255, 255, 255, 0.17);
     border: 1.5px solid var(--text-color);
 }
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.dropdown-content a { 
+    display: block;
+}
+
+.dropdown.show .dropdown-content{
+    max-height: 300px;
+}
+
+
 
 .copy{
     padding: 25px 0px;
