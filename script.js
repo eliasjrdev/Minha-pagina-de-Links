@@ -1,17 +1,7 @@
-function toggleMode(){
-    const html = document.documentElement
 
-    if(html.classList.contains('lightColor')){
-        html.classList.remove('lightColor')
-    } else{
-       html.classList.add('lightColor') 
-    }
-}
-
-// Seleciona o botão e adiciona o evento de clique
-document.getElementById('dropdown-btn').addEventListener('click', function() {
-    this.parentElement.classList.toggle('show'); // Alterna a classe "show" no dropdown
-  });
+document.querySelector('.dropdown-btn').addEventListener('click', function() {
+  this.parentElement.classList.toggle('show'); // Alterna a classe "show" no dropdown
+});
   
   // Fecha o dropdown se clicar fora dele
   window.onclick = function(event) {
