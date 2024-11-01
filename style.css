@@ -11,7 +11,7 @@
     --background: #121214;
     --strock-color:rgba(255, 255, 255, 0.5);
     --background-links: rgba(0, 0, 0, 0.1);
-    --buttonDarkModeBg-url: url(./imgs/stars.svg);
+    --buttonDarkModeBg-url: url(./imgs/stars.svg);    
 }
 
 .lightColor{
